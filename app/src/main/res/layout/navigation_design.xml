@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/vector" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:padding="@dimen/_15sdp"
+        android:rotation="180"
+        android:src="@drawable/back_white" />
+
+    <com.calintat.explorer.Utils.ListViewUtil
+        android:id="@+id/nav_list"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        tools:listitem="@layout/layout_setting" />
+
+
+</RelativeLayout>

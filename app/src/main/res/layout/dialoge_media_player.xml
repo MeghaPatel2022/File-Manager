@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66818181">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/bg_color"
+            app:cardCornerRadius="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_track_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_97sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:fontFamily="@font/nunito_black"
+                    android:singleLine="true"
+                    android:text="Audio Track 1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_92sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:bsb_min="0"
+                    app:bsb_second_track_color="@color/white"
+                    app:bsb_track_color="@color/black"
+                    app:bsb_track_size="4dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_15sdp">
+
+                    <ImageView
+                        android:id="@+id/img_prev"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/p_song" />
+
+                    <ImageView
+                        android:id="@+id/img_pause"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_toRightOf="@id/img_prev"
+                        android:src="@drawable/pause" />
+
+                    <ImageView
+                        android:id="@+id/img_next"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@+id/img_pause"
+                        android:src="@drawable/next_song" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_6sdp">
+
+            <ImageView
+                android:id="@+id/artist_art"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/music_cd_black" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_75sdp"
+            android:src="@drawable/close" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

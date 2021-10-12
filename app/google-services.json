@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "565812130029",
+    "project_id": "file-explorer-298011",
+    "storage_bucket": "file-explorer-298011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565812130029:android:0450c797bd71d43cd05ce4",
+        "android_client_info": {
+          "package_name": "com.calintat.explorer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565812130029-82d155ao5tgat3i41f1oln7nsa3igh4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.calintat.explorer",
+            "certificate_hash": "31cc6e54089406cbbdd81b2b95674ff4268bcf41"
+          }
+        },
+        {
+          "client_id": "565812130029-hgn048r8v87er2u2um0ho3391fpt4kth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnkVn07p5eoZ_j7G_IrDSTpNDYQQ055ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565812130029-hgn048r8v87er2u2um0ho3391fpt4kth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

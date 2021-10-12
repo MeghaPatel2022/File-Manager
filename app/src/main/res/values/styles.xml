@@ -1,0 +1,92 @@
+<resources>
+
+    <!--APP THEMES-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary0</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark0</item>
+        <item name="colorAccent">@color/colorAccentDark0</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Audio" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark0</item>
+        <item name="colorAccent">@color/colorAccentDark0</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Image">
+        <item name="colorPrimary">@color/colorPrimary2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark0</item>
+        <item name="colorAccent">@color/colorAccentDark0</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Video" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary3</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark0</item>
+        <item name="colorAccent">@color/colorAccentDark0</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <!--TEXT STYLES-->
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Text.Body1">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Text.Subhead">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Text.Body1.Inverse">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <style name="Text.Subhead.Inverse">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <!--ATTRS-->
+
+    <attr name="colorAccentLight" format="color|reference" />
+
+    <attr name="colorSelected" format="color|reference" />
+
+</resources>

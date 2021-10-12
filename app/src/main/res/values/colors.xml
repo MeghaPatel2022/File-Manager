@@ -1,0 +1,30 @@
+<resources>
+
+    <color name="colorAccentLight">#FFFF00</color>
+    <color name="colorAccentDark0">#101010</color>
+    <color name="colorAccentDark1">#E040FB</color>
+    <color name="colorPrimary0">#00000000</color>
+    <color name="colorPrimary1">#EF6C00</color>
+    <color name="colorPrimary2">#9C27B0</color>
+    <color name="colorPrimary3">#F44336</color>
+    <color name="colorPrimaryDark0">#1C1C1C</color>
+
+    <!--FILE COLORS-->
+
+    <color name="directory">#61000000</color>
+    <color name="misc_file">#8A000000</color>
+    <color name="audio">#EF6C00</color>
+    <color name="image">#9C27B0</color>
+    <color name="video">#F44336</color>
+    <color name="doc">#2196F3</color>
+    <color name="ppt">#FFC107</color>
+    <color name="xls">#4CAF50</color>
+    <color name="pdf">#F44336</color>
+    <color name="txt">#00BCD4</color>
+
+    <color name="zip">#FDD835</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#AEFFFFFF</color>
+    <color name="black">#171717</color>
+    <color name="bg_color">#101010</color>
+</resources>

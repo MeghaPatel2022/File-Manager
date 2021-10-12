@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_20sdp"
+                android:rotation="180"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="Audios"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp" />
+
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_18sdp"
+                android:src="@drawable/filter" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_toolbar"
+            android:background="@drawable/up_curve">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/data_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/artist_item" />
+
+            <RelativeLayout
+                android:id="@+id/rl_List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_img_download_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_list_doc" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_grid_list"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/gird_view" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#66000000"
+            android:padding="@dimen/_135sdp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

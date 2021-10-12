@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">File Manager</string>
+
+    <string name="action_delete">Delete</string>
+
+    <string name="action_rename">Rename</string>
+
+    <string name="action_search">Search</string>
+
+    <string name="action_copy">Copy</string>
+
+    <string name="action_move">Move</string>
+
+    <string name="action_send">Send</string>
+
+    <string name="action_sort">Sort</string>
+
+    <!--NAVIGATION-->
+
+    <string name="navigation_settings">Settings</string>
+
+    <string name="title">Title</string>
+
+    <!--Title Name-->
+
+    <string name="download">Download</string>
+
+    <string name="require_permission">This feature requires the specified permission.</string>
+
+</resources>

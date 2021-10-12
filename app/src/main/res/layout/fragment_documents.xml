@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_doc_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:visibility="gone"
+        tools:listitem="@layout/item_download_doc" />
+
+    <TextView
+        android:id="@+id/no_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="No Data Found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_doc_download_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_list_doc" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_grid_list"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:src="@drawable/list_view" />
+
+
+</RelativeLayout>
